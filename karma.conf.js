@@ -1,11 +1,11 @@
-// Karma configuration
-// Generated on Wed Oct 23 2013 10:53:25 GMT+0200 (Środkowoeuropejski czas letni)
+    // Karma configuration
+    // Generated on Wed Oct 23 2013 10:53:25 GMT+0200 (Środkowoeuropejski czas letni)
 
-module.exports = function(config) {
-  config.set({
+    module.exports = function(config) {
+    config.set({
 
       preprocessors: {
-          'templates/**/*.tpl.html': ['ng-html2js']
+          'templates/*.tpl.html': ['ng-html2js']
       },
 
     // base path, that will be used to resolve files and exclude
@@ -22,14 +22,16 @@ module.exports = function(config) {
         'bower_components/angular/angular.js',
         'bower_components/angular-mocks/angular-mocks.js',
         'templates/**/*.tpl.html',
-        'lib/*.js',
+        'lib/module.js',
+        'lib/CalendarController.js',
+        'lib/calendar-popover.directive.js',
         'tests/**/*.spec.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-      
+
     ],
 
 
@@ -72,6 +74,12 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, it capture browsers, run tests and exit
-    singleRun: false
-  });
+    singleRun: false,
+
+        plugins: [
+            'karma-jasmine',
+            'karma-chrome-launcher',
+            'karma-ng-html2js-preprocessor'
+        ]
+    });
 };
