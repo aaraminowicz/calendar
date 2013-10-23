@@ -1,0 +1,14 @@
+<div class="popover fade">
+    <table>
+        <thead>
+        <tr>
+            <td class="title"></td>
+        </tr>
+        </thead>
+        <tr ng-repeat="week in weeks">
+            <td ng-repeat="day in week">
+                <button class="btn">{{ day }}</button>
+            </td>
+        </tr>
+    </table>
+</div>

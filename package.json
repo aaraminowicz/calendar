@@ -1,0 +1,33 @@
+{
+  "name": "calendar",
+  "version": "0.0.1",
+  "description": "Hello **world**.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bulanh/calendar.git"
+  },
+  "author": "Adam Araminowicz",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/bulanh/calendar/issues"
+  },
+  "devDependencies": {
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-script-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-jasmine": "~0.1.3",
+    "karma-requirejs": "~0.1.0",
+    "karma-coffee-preprocessor": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma": "~0.10.2",
+    "karma-ng-html2js-preprocessor": "~0.1.0"
+  }
+}
