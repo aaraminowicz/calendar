@@ -22,9 +22,8 @@
         'bower_components/angular/angular.js',
         'bower_components/angular-mocks/angular-mocks.js',
         'templates/**/*.tpl.html',
-        'lib/module.js',
-        'lib/CalendarController.js',
-        'lib/calendar-popover.directive.js',
+        'lib/module/module.js',
+        'lib/*.js',
         'tests/**/*.spec.js'
     ],
 
@@ -65,7 +64,7 @@
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // If browser does not capture in given timeout [ms], kill it
@@ -76,10 +75,10 @@
     // if true, it capture browsers, run tests and exit
     singleRun: false,
 
-        plugins: [
-            'karma-jasmine',
-            'karma-chrome-launcher',
-            'karma-ng-html2js-preprocessor'
-        ]
+//        plugins: [
+//            'karma-jasmine',
+//            'karma-chrome-launcher',
+//            'karma-ng-html2js-preprocessor'
+//        ]
     });
 };

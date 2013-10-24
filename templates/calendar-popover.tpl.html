@@ -2,10 +2,11 @@
     <table>
         <thead>
         <tr>
-            <td class="title"></td>
+            <th class="title"></th>
         </tr>
         </thead>
         <tr ng-repeat="week in weeks">
+            <td class="week-number">{{ week }}</td>
             <td ng-repeat="day in week">
                 <button class="btn">{{ day }}</button>
             </td>
